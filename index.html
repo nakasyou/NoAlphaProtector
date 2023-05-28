@@ -1,0 +1,47 @@
+<!doctype html>
+ 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <title>NoAlphaProtector</title>
+    <meta name="description" content="線画プロテクトを解除するツールです。" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+   
+  </head>
+  <body class="bg-purple-50">
+    <div class="mx-10">
+      <h1 class="text-3xl">NoAlphaProtecter</h1>
+      <p class="my-1">線画プロテクトを解除します。</p>
+      <p class="my-1">線画プロテクトとは、@sousaku_rainbowさんの<a class="link" href="https://twitter.com/sousaku_rainbow/status/1662116493088391170">
+        このツイート
+      </a>
+      を参照</p>
+      <hr>
+      <div>
+        <div>対象の線画</div>
+        <input type="file" class="file-input w-full max-w-xs" id="file">
+      </div>
+      <div>
+        <canvas id="img" width="100" height="100" class="hidden"></canvas>
+      </div>
+      
+      <div class="mt-5">
+        <div>結果:</div>
+        <div><img id="result"></div>
+      </div>
+      <div>
+        結果が表示されたら、上の画像を保存してください。
+      </div>
+      <div class="mt-10">
+        &copy; 2023 nakasyou, MIT LICENSED.
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
